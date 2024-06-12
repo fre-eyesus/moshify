@@ -281,7 +281,7 @@ a{
   width: 40px;
   display: inline-block;
   position:absolute; 
-  top: -5px;
+  top: -4px;
   right:5%;
 }
 
@@ -301,4 +301,16 @@ a{
   .plan__description {
     font-size: 1.7rem;
   }
+  /* Media */
+.media{
+    display: flex; 
+    flex-direction: row;
+ }
+  
+.media__title {
+    margin-top:0;
+}
+.media___body{
+    margin:0 2rem;
+}
  
