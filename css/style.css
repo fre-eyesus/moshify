@@ -163,6 +163,10 @@ a{
     text-align:center;
     white-space:nowra;
 }
+.btn-stretched{
+    padding-left:6rem;
+    padding-right:6rem;
+}
 .btn-primary{
     background:var(--color-secondary);
     color:#fff;
@@ -385,14 +389,16 @@ a{
 .grid {
     display: grid;
   }
-  
-  @media screen and (min-width: 768px) {
+.grid--lx2{
+    grid-template-columns: repeat(2, lfr);
+}
+@media screen and (min-width:768px) {
     .grid--1x2 {
       grid-template-columns: repeat(2, 1fr);
     }
   }
   
-  @media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
     .grid--1x3 {
       grid-template-columns: repeat(3, 1fr);
     }
@@ -417,5 +423,36 @@ a{
         font-size:2.4rem;
     }
 }
-
-    
+/* Callout */
+.callout{
+    padding:4rem;
+    border-radius: 5px;
+}
+.callout--primary{
+    background:var(--color-primary);
+    color:#fff;
+}
+.callout__heading{
+    color:#fff;
+    margin-top:0;
+    font-size: 3rem;
+}
+.callout .btn{
+    justify-self: center;
+    align-self:center;
+}
+.callout__content{
+    text-align: center;
+}
+@media screen and (min-width:768px){
+    .callout .grid--1x2{
+        grid-template-columns: 1fr ,auto;
+    }
+    .callout__content{
+        text-align: left;
+    }
+    .callout .btn{
+        justify-self: start;
+        margin:0 2rem;
+    }
+}
