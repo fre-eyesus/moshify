@@ -161,7 +161,7 @@ a{
     padding:2rem 3rem; 
     text-transform: uppercase;
     text-align:center;
-    white-space:nowra;
+    white-space:nowrap;
 }
 .btn-stretched{
     padding-left:6rem;
@@ -456,3 +456,13 @@ a{
         margin:0 2rem;
     }
 }
+/*collibles  */
+.collapsible__header{
+    display:flex;
+    justify-content: space-between;
+}
+.collapsible__heading{
+    margin-top:0;
+    font-size: 3rem;
+}
+
