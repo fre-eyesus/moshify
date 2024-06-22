@@ -475,10 +475,42 @@ a{
     overflow:hidden;
     transition:all 0.3s;
 }
-.collpsible--expanded .collapsible__chevron{
+.collapsible--expanded .collapsible__chevron{
     transform:rotate(0);
 }
-.collpsible--expanded .collapsible__content{
+.collapsible--expanded .collapsible__content{
   max-height:100vh;
   opacity:1;
+}
+/* Navigation Bar */
+.nav{
+    background:#000;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:1rem;
+}
+.nav__list{
+    width:100%;
+    margin:0;
+}
+.nav__item{
+    border-bottom: 1px solid #d2d0d2;
+}
+.nav__item > a{
+    color: #d2d0d2;
+    transition: color 0.3s;
+    padding:0.5rem 2rem;
+}
+.nav__item > a:hover{
+    color: #fff;
+}
+.nav--toggler{
+    opacity:0.5;
+    transition: box-shadow 0.15s;
+    cursor: pointer;
+}
+.nav.collapsible--expanded .nav--toggler{
+    opacity: 1;
+    box-shadow: 0 0 3px #666;
 }

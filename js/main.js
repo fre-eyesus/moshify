@@ -1,6 +1,8 @@
-const collapsibles = document.querySelectorAll(".collapsible");
-collapsibles.forEach((item) =>
-  item.addEventListener("click", function () {
-    this.classList.toggle("collapsible--expanded");
-  })
-);
+document.addEventListener("DOMContentLoaded", function() {
+  const toggler = document.querySelector(".nav--toggler");
+  const nav = document.querySelector(".nav");
+  
+  toggler.addEventListener("click", function () {
+      nav.classList.toggle("collapsible--expanded");
+  });
+});

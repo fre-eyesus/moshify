@@ -14,17 +14,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="nav">
+    <nav class="nav collapsible">
             <a href="/"><img src="images/logo.svg" alt=""></a>
-            <svg class="icon icon--white">
+            <svg class="icon icon--white nav--toggler">
                <use xlink:href="/images/sprite.svg#menu"></use>
             </svg>
-          <ul class="list">
-              <li><a href="#">Hosting</a></li>
-              <li><a href="#">Domain</a></li>
-              <li><a href="#">VPS</a></li>
-              <li><a href="#">Pricing</a></li>
-        </ul>
+          <ul class="list nav__list collapsible__content">
+              <li class="nav__item"><a href="#">Hosting</a></li>
+              <li class="nav__item"><a href="#">Domain</a></li>
+              <li class="nav__item"><a href="#">VPS</a></li>
+              <li class="nav__item"><a href="#">Pricing</a></li>
+          </ul>
     </nav>
     <script src='js/main.js'></script>
 </body>
