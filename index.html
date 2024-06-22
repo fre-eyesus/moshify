@@ -14,17 +14,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="collapsible collpsible--expanded">
-        <header class="collapsible__header">
-            <h2 class="collapsible__heading">Item 1</h2>
-           <svg class="icon icon--white collapsible__chevron">
-                   <use xlink:href="/images/sprite.svg#chevron"></use>
+    <nav class="nav">
+            <a href="/"><img src="images/logo.svg" alt=""></a>
+            <svg class="icon icon--white">
+               <use xlink:href="/images/sprite.svg#menu"></use>
             </svg>
-        </header>
-        <div class="collapsible__content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore qui illo nisi, aperiam obcaecati
-        </div>
-    </div>
+          <ul class="list">
+              <li><a href="#">Hosting</a></li>
+              <li><a href="#">Domain</a></li>
+              <li><a href="#">VPS</a></li>
+              <li><a href="#">Pricing</a></li>
+        </ul>
+    </nav>
     <script src='js/main.js'></script>
 </body>
 </html>
