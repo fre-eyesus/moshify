@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const nav = document.querySelector('.nav');
 
   navToggler.addEventListener('click', function() {
+      console.log('Toggler clicked'); // Debugging log
       nav.classList.toggle('collapsible--expanded');
   });
 });
-
