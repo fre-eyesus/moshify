@@ -523,7 +523,7 @@ a{
   .nav.collapsible--expanded .nav__toggler {
     opacity: 1;
     box-shadow: 0 0 0 3px #666;
-    border-radius: 5px;
+    border-radius: 6px;
   }
   
   .nav__brand {
